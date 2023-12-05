@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>나만의 중고마켓</title>
+    <link rel="stylesheet"
+        href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/easygpt/default.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <style>
+        /* 꾸미기 */
+        .card {
+
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero bg-dark text-center py-5">
+        <h1 class="text-white">나만의 르탄마켓</h1>
+        <h2 class="text-white">집에 있는 물건을 팝니다!</h2>
+    </div>
+    <div class="container mt-5">
+        <div class="row mb-4">
+            <!-- 냄비 카드 -->
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem">
+                    <img src="https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG90fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                        class="card-img-top" alt="냄비 이미지" />
+                    <div class="card-body">
+                        <h5 class="card-title">냄비</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">5만원</h6>
+                        <p class="card-text">
+                            한 번 밖에 안 쓴 냄비 팝니다. 부모님이 독립할 때 주신 거에요!
+                        </p>
+                        <a href="https://spartacodingclub.kr/" class="btn btn-primary" target="_blank"
+                            rel="noopener noreferrer">
+                            상세 정보 보기
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 전기밥솥 카드 -->
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem">
+                    <img src="https://images.unsplash.com/photo-1544233726-9f1d2b27be8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8JUVCJUIwJUE1JUVDJTg2JUE1fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                        class="card-img-top" alt="전기밥솥 이미지" />
+                    <div class="card-body">
+                        <h5 class="card-title">전기밥솥</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">8만원</h6>
+                        <p class="card-text">
+                            거의 사용하지 않은 전기밥솥 팝니다. 상태 양호합니다.
+                        </p>
+                        <a href="https://spartacodingclub.kr/" class="btn btn-primary" target="_blank"
+                            rel="noopener noreferrer">
+                            상세 정보 보기
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 주전자 카드 -->
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem">
+                    <img src="https://images.unsplash.com/photo-1622088934558-b729cf3c8cf8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8JUVCJUFDJUJDJTIwJUVDJUEzJUJDJUVDJUEwJTg0JUVDJTlFJTkwfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                        class="card-img-top" alt="주전자 이미지" />
+                    <div class="card-body">
+                        <h5 class="card-title">주전자</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">3만원</h6>
+                        <p class="card-text">
+                            사용감이 있지만 기능에는 문제 없는 주전자 팝니다.
+                        </p>
+                        <a href="https://spartacodingclub.kr/" class="btn btn-primary" target="_blank"
+                            rel="noopener noreferrer">
+                            상세 정보 보기
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 청소기 카드 -->
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem">
+                    <img src="data:image/jpeg;base64,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"
+                        class="card-img-top" alt="주전자 이미지" />
+                    <div class="card-body">
+                        <h5 class="card-title">청소기</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">8만원</h6>
+                        <p class="card-text">
+                            흡입력 좋은 청소기!
+                        </p>
+                        <a href="https://spartacodingclub.kr/" class="btn btn-primary" target="_blank"
+                            rel="noopener noreferrer">
+                            상세 정보 보기
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
